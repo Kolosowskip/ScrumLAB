@@ -1,0 +1,137 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: white url("/images/background.png");
+}
+
+.header-container {
+  height: 100px;
+  background: #4a4a49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header > h2 {
+  color: white;
+  font-family: 'Charmonman', cursive;
+
+  &:after {
+    content: "Jedzonko";
+    color: #E58A20;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  i {
+    font-size: 3rem;
+    color: orange;
+  }
+
+}
+
+.aside-container {
+  background: #5B605F;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #262424;
+
+  .nav-list {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 60px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+    .used-li {
+      border-left: 4px solid orange;
+
+      &:after {
+
+        font-family: "Font Awesome 5 Free", sans-serif;
+        font-weight: 700;
+        content: "\f054";
+        color: orange;
+        right: 0;
+        position: absolute;
+      }
+    }
+  }
+}
+
+
+a {
+  padding: 15px 15px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+}
+
+
+.main-content {
+  width: 100%;
+
+}
+
+.mid-container {
+
+  display: flex;
+  height: calc(100% - 100px);
+}
+
+.desktop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+.recipes {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.plans {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
